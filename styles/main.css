@@ -1,0 +1,156 @@
+/* Document settings */
+
+@import url('droid-serif/stylesheet.css');
+@import url('glacial-indifference/stylesheet.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 90%;
+    text-decoration: none;
+    font-weight: 100;
+    list-style: none;
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background: #424242;
+}
+
+body {
+    background: #E3F3FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: #FFFFFF;
+    background-color: #7E7FD6;
+}
+
+::-moz-selection {
+    color: #FFFFFF;
+    background-color: #7E7FD6;
+}
+
+#middle {
+    width: 50%;
+    height: auto;
+    display: grid;
+    gap: 15px;
+}
+
+#title {
+    font-size: 70px;
+    max-width: max-content;
+    font-weight: bold;
+    color: #043A88;
+    font-family: 'Droid Serif';
+}
+
+#sub-title {
+    font-size: 25px;
+    color: #043A88;
+    text-transform: uppercase;
+}
+
+#buttons {
+    display: flex;
+    width: auto;
+}
+
+.button {
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b4cee0;
+    padding: 5px 0;
+    margin-right: 30px;
+}
+
+.button:hover {
+    color: #043A88;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    font-size: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    max-width: max-content;
+    opacity: 0.2;
+    color: #888ba3;
+}
+
+
+/* Viewport configurations */
+@media screen and (max-width: 600px) {
+    #middle {
+        width: 70%;
+        gap: 15px;
+    }
+    #title {
+        font-size: 50px;
+    }
+    #sub-title {
+        font-size: 25px;
+    }
+    .button {
+        font-size: 24px;
+        padding: 15px 20px;
+    }
+    #copyright {
+        font-size: 24px;
+    }
+    #epilepsy-stop {
+        right: 25px;
+        top: 25px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #middle {
+        width: 75%;
+    }
+    #title {
+        font-size: 40px;
+    }
+    #sub-title {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+    #copyright {
+        font-size: 22px;
+    }
+}
+
+/*
+iPhone X and Samsung Devices
+@media(hover: hover) and (pointer: fine) {
+    #buttons .button:hover {
+        background: #9394CC;
+        color: #FFFFFF;
+    }
+}
+*/

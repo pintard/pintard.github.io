@@ -1,0 +1,56 @@
+/* Misc pages */
+
+#misc #middle {
+    text-align: center;
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+#misc #middle a {
+    color: #0382C0;
+}
+
+#misc #middle a:hover {
+    color: #7E7FD6;
+}
+
+#misc #middle h1 {
+    font-size: 50px;
+    color: #F1D064;
+}
+
+#misc #middle h2 {
+    color: #F199C5;
+}
+
+#misc #middle article:first-of-type {
+    color: #99EFCF;
+}
+
+#misc #middle article:nth-of-type(2) {
+    color: #efc799;
+}
+
+#misc #middle article {
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+}
+
+@media screen and (max-width: 450px) {
+    #misc #middle {
+        width: 280px;
+        height: 335px;
+    }
+    #misc #middle h1 {
+        font-size: 30px;
+        text-shadow: -4px -2px 0 #363D51;
+    }
+    #misc #middle h2 {
+        font-size: 16px;
+    }
+}
