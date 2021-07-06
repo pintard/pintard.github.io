@@ -1,0 +1,35 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pintard/website.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": {
+    "name": "donovan pintard",
+    "email": "donovanpintard@gmail.com",
+    "url": "https://donovanpintard.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pintard/website/issues"
+  },
+  "homepage": "https://github.com/pintard/website#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.9"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
