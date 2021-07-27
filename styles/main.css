@@ -1,156 +1,113 @@
 /* Document settings */
-
-@import url('droid-serif/stylesheet.css');
-@import url('glacial-indifference/stylesheet.css');
-
+@import url("droid-serif/stylesheet.css");
+@import url("inter/stylesheet.css");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 90%;
-    text-decoration: none;
-    font-weight: 100;
-    list-style: none;
-    font-family: 'Glacial Indifference', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
 }
 
-html {
-    background: #424242;
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+html ::-moz-selection,
+body ::-moz-selection {
+  color: #292558;
+  background: #e7c83f;
+}
+
+html ::selection,
+body ::selection {
+  color: #292558;
+  background: #e7c83f;
+}
+
+html html,
+body html {
+  background: #434343;
+}
+
+html body,
+body body {
+  background: #E3F3FD;
 }
 
 body {
-    background: #E3F3FD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-::selection {
-    color: #FFFFFF;
-    background-color: #7E7FD6;
-}
-
-::-moz-selection {
-    color: #FFFFFF;
-    background-color: #7E7FD6;
+  color: #043A88;
 }
 
 section {
-    width: 50%;
-    height: auto;
-    display: grid;
-    gap: 12px;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.8em;
 }
 
-h1 {
-    font-size: 70px;
-    max-width: max-content;
-    font-weight: bold;
-    color: #043A88;
-    font-family: 'Droid Serif';
+section h1 {
+  font-family: 'Droid Serif', sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+  white-space: nowrap;
+  line-height: 80%;
 }
 
-h2 {
-    font-size: 25px;
-    color: #043A88;
-    text-transform: uppercase;
+section h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 130%;
+  white-space: nowrap;
+  line-height: 80%;
 }
 
-#links {
-    display: flex;
-    width: auto;
+section span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2em;
 }
 
-#links a {
-    font-size: 20px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #b4cee0;
-    padding: 5px 0;
-    margin-right: 30px;
+section span a {
+  color: #b4cee0;
+  letter-spacing: 0.1em;
 }
 
-#links a:hover {
-    color: #043A88;
+section span a:hover {
+  color: #043A88;
 }
 
 #copyright {
-    position: absolute;
-    bottom: 15px;
-    right: 25px;
-    font-size: 14px;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    max-width: max-content;
-    opacity: 0.2;
-    color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: none;
 }
-
 
 /* Viewport configurations */
-@media screen and (max-width: 600px) {
-    #middle {
-        width: 70%;
-        gap: 15px;
-    }
-    #title {
-        font-size: 50px;
-    }
-    #sub-title {
-        font-size: 25px;
-    }
-    .button {
-        font-size: 24px;
-        padding: 15px 20px;
-    }
-    #copyright {
-        font-size: 24px;
-    }
-    #epilepsy-stop {
-        right: 25px;
-        top: 25px;
-        display: none;
-    }
+@media screen and (max-width: 420px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  h1, h2 {
+    word-wrap: normal;
+  }
 }
-
-@media screen and (max-width: 330px) {
-    #middle {
-        width: 75%;
-    }
-    #title {
-        font-size: 40px;
-    }
-    #sub-title {
-        font-size: 20px;
-    }
-    .button {
-        font-size: 18px;
-        padding: 12px 18px;
-    }
-    #copyright {
-        font-size: 22px;
-    }
-}
-
-/*
-iPhone X and Samsung Devices
-@media(hover: hover) and (pointer: fine) {
-    #buttons .button:hover {
-        background: #9394CC;
-        color: #FFFFFF;
-    }
-}
-*/
+/*# sourceMappingURL=main.css.map */
