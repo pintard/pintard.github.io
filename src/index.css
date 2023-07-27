@@ -13,4 +13,12 @@ body,
 #root {
   width: 100%;
   height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 4;
+}
+
+body ::selection,
+html ::selection {
+  color: #36363c;
+  background: #c2b145;
 }
